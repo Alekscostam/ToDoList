@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nudHour = new System.Windows.Forms.NumericUpDown();
-            this.lvAllTasks = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnApply = new System.Windows.Forms.Button();
+            this.dtUpcoming = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ToDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nudHour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtUpcoming)).BeginInit();
             this.SuspendLayout();
             // 
             // nudHour
@@ -46,44 +48,6 @@
             this.nudHour.Name = "nudHour";
             this.nudHour.Size = new System.Drawing.Size(49, 26);
             this.nudHour.TabIndex = 3;
-            // 
-            // lvAllTasks
-            // 
-            this.lvAllTasks.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvAllTasks.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.id});
-            this.lvAllTasks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvAllTasks.HideSelection = false;
-            this.lvAllTasks.Location = new System.Drawing.Point(58, 33);
-            this.lvAllTasks.Name = "lvAllTasks";
-            this.lvAllTasks.Size = new System.Drawing.Size(666, 304);
-            this.lvAllTasks.TabIndex = 5;
-            this.lvAllTasks.UseCompatibleStateImageBehavior = false;
-            this.lvAllTasks.View = System.Windows.Forms.View.Details;
-            this.lvAllTasks.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LvAllTasks_MouseClick);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Time of day";
-            this.columnHeader1.Width = 110;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Date";
-            this.columnHeader2.Width = 95;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "To do";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 401;
-            // 
-            // id
-            // 
-            this.id.Text = "Id";
             // 
             // btnApply
             // 
@@ -100,27 +64,84 @@
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.BtnApply_Click);
             // 
+            // dtUpcoming
+            // 
+            this.dtUpcoming.AllowUserToAddRows = false;
+            this.dtUpcoming.AllowUserToDeleteRows = false;
+            this.dtUpcoming.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtUpcoming.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtUpcoming.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Time,
+            this.Date,
+            this.ToDo});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtUpcoming.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dtUpcoming.GridColor = System.Drawing.Color.White;
+            this.dtUpcoming.Location = new System.Drawing.Point(44, 17);
+            this.dtUpcoming.Name = "dtUpcoming";
+            this.dtUpcoming.ReadOnly = true;
+            this.dtUpcoming.RowTemplate.Height = 25;
+            this.dtUpcoming.Size = new System.Drawing.Size(688, 320);
+            this.dtUpcoming.TabIndex = 9;
+            this.dtUpcoming.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtUpcoming_CellContentClick);
+            this.dtUpcoming.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtUpcoming_CellMouseClick);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 50;
+            // 
+            // Time
+            // 
+            this.Time.HeaderText = "Time";
+            this.Time.Name = "Time";
+            this.Time.ReadOnly = true;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // ToDo
+            // 
+            this.ToDo.HeaderText = "To do";
+            this.ToDo.Name = "ToDo";
+            this.ToDo.ReadOnly = true;
+            this.ToDo.Width = 500;
+            // 
             // FormUpcomingTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 378);
+            this.Controls.Add(this.dtUpcoming);
             this.Controls.Add(this.btnApply);
             this.Controls.Add(this.nudHour);
-            this.Controls.Add(this.lvAllTasks);
             this.Name = "FormUpcomingTasks";
             ((System.ComponentModel.ISupportInitialize)(this.nudHour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtUpcoming)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.NumericUpDown nudHour;
-        private System.Windows.Forms.ListView lvAllTasks;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader id;
         private System.Windows.Forms.Button btnApply;
+        private System.Windows.Forms.DataGridView dtUpcoming;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ToDo;
     }
 }

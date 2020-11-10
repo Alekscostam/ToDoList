@@ -15,13 +15,13 @@ namespace ToDoList
 {
     public partial class FormPopup : Form
     {
-        TaskDto taskDto;
-        public FormPopup(Model.TaskDto taskDto)
+        Model.Task task;
+        public FormPopup(Model.Task taskDto)
         {
             
             InitializeComponent();
-            this.taskDto = new TaskDto();
-            this.taskDto = taskDto;
+            this.task = new Model.Task();
+            this.task = taskDto;
 
             LoadData();
 
@@ -29,15 +29,15 @@ namespace ToDoList
         
         private void LoadData()
         {
-            lblTime.Text = $"Time : {taskDto.TimeSpan} ";
-            lblDesc.Text = $"To do : {taskDto.Description} ";
+            lblTime.Text = $"Time : {task.TimeSpan} ";
+            lblDesc.Text = $"To do : {task.Description} ";
 
-            switch (int.Parse(taskDto.IdPriority))
+            switch (task.IdPriority)
             {
-                case (int)PriorityDto.HIGH:
+                case (int)PriorityModel.HIGH:
                     this.BackColor = Color.Red;
                 break; 
-                case (int)PriorityDto.MEDIUM:
+                case (int)PriorityModel.MEDIUM:
                     this.BackColor = Color.Orange;
                     break;
                 default:

@@ -159,7 +159,9 @@
     <Compile Include="Form\FormInformation.Designer.cs">
       <DependentUpon>FormInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelperClasses\CustomDataGridView.cs" />
     <Compile Include="HelperClasses\ILoader.cs" />
+    <Compile Include="HelperClasses\ObjectMapper.cs" />
     <Compile Include="HelperClasses\SaveOrDeleteOperationChecker.cs" />
     <Compile Include="HelperClasses\MapperListTask.cs" />
     <Compile Include="Form\DashBoard.cs">

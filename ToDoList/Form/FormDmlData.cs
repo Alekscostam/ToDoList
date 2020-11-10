@@ -11,8 +11,8 @@ namespace ToDoList.Forms
     public partial class FormDmlData : Form , ILoader
     {
         readonly DmlTaskService dmlTaskService;
-        readonly TaskDto taskDto;
-        public FormDmlData(TaskDto taskDto = null)
+        readonly Task taskDto;
+        public FormDmlData(Task taskDto = null)
         {
 
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace ToDoList.Forms
 
         }
 
-        private void LoadData(TaskDto taskDto)
+        private void LoadData(Task task)
         {
             if (taskDto != null)
             {
@@ -36,12 +36,12 @@ namespace ToDoList.Forms
           
                 mtbHour.Text = timeSpan;
 
-                switch (int.Parse(taskDto.IdPriority))
+                switch (task.IdPriority)
                 {
-                    case (int)PriorityDto.HIGH:
+                    case (int)PriorityModel.HIGH:
                         rbVery.Checked = true;
                         break;
-                    case (int)PriorityDto.MEDIUM:
+                    case (int)PriorityModel.MEDIUM:
                         rbModerately.Checked = true;
                         break;
                     default:
@@ -114,13 +114,13 @@ namespace ToDoList.Forms
                     #region radioButton checker
 
                     if (rbLittle.Checked)
-                        priority.IdPriority = (int)PriorityDto.LOW;
+                        priority.IdPriority = (int)PriorityModel.LOW;
 
                     else if (rbVery.Checked)
-                        priority.IdPriority = (int)PriorityDto.HIGH;
+                        priority.IdPriority = (int)PriorityModel.HIGH;
 
                     else
-                        priority.IdPriority = (int)PriorityDto.MEDIUM;
+                        priority.IdPriority = (int)PriorityModel.MEDIUM;
 
                     #endregion
 

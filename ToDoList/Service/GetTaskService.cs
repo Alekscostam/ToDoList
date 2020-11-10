@@ -17,13 +17,13 @@ namespace ToDoList.Service.OperationsService
             
       
 
-        public List<TaskDto> FindAllTasks()
+        public List<Task> FindAllTasks()
         {
             listsTask = taskContext.Tasks.ToList();
             return DbFinder(listsTask);
         }
 
-        public List<TaskDto> FindUpcomingTasks(int amount)
+        public List<Task> FindUpcomingTasks(int amount)
         {
             listsTask = taskContext.Tasks.ToList();
             return DbFinder(listsTask)
@@ -32,45 +32,45 @@ namespace ToDoList.Service.OperationsService
                 .Take(amount).ToList();
         }
 
-        public List<TaskDto> FindDailyTasks()
+        public List<Task> FindDailyTasks()
         {
             listsTask = taskContext.Tasks.ToList();
             return DbFinder(listsTask).Where(x => DateTime.Parse(x.DateTime) == DateTime.Today).ToList();
         }
 
-        public List<TaskDto> FindByDataTasks(DateTime dateTime)
+        public List<Task> FindByDataTasks(DateTime dateTime)
         {
             listsTask = taskContext.Tasks.ToList();
             return DbFinder(listsTask).Where(x => DateTime.Parse(x.DateTime) == dateTime).ToList();
         }
-        public TaskDto FindOneUpcomingTaskByActuallyDate(TimeSpan actuallyDate)
+        public Task FindOneUpcomingTaskByActuallyDate(TimeSpan actuallyDate)
         {
 
-            TaskDto taskDto = this.FindUpcomingTasks(1)
+            Task task = this.FindUpcomingTasks(1)
                 .Where(x=>(TimeSpan.Parse(x.TimeSpan)-actuallyDate).ToString().Substring(0,2).Equals("00")).FirstOrDefault();
-            return taskDto;
+            return task;
 
         }
-        public List<TaskDto> DbFinder(List<Task> listsTask)
+        public List<Task> DbFinder(List<Task> listsTask)
         {
-            List<TaskDto> tasksListDto = new List<TaskDto>();
+            List<Task> tasksList = new List<Task>();
 
             listsTask.ForEach(
                     x =>
                     {
-                        tasksListDto.Add(new TaskDto()
+                        tasksList.Add(new Task()
                         {
                             Id = x.Id,
                             TimeSpan = x.TimeSpan,
                             DateTime = x.DateTime,
-                            IdPriority = x.IdPriority.ToString(),
+                            IdPriority = x.IdPriority,
                             Description = x.Description,
 
                         });
                     }
                   );
 
-            return tasksListDto.OrderBy(x => DateTime.Parse(x.DateTime)).ThenBy(x => x.TimeSpan).ToList();
+            return tasksList.OrderBy(x => DateTime.Parse(x.DateTime)).ThenBy(x => x.TimeSpan).ToList();
         }       
     }
 }

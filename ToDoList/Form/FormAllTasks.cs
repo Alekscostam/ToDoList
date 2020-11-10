@@ -18,61 +18,95 @@ namespace ToDoList.Forms
         public FormAllTasks()
         {
             InitializeComponent();
-            lvAllTasks.FullRowSelect = true;
             getTaskService = new GetTaskService();
             dmlTaskService = new DmlTaskService();
             LoadData();
-           
+
 
         }
- 
-      
-        private void LvAllTasks_MouseClick(object sender, MouseEventArgs e)
+
+
+        private void DtAllTasks_MouseClick(object sender, MouseEventArgs e)
         {
-            if (lvAllTasks.SelectedItems.Count > 0)
-            {
 
-                ListViewItem item = lvAllTasks.SelectedItems[0];
-                TaskDto taskDto = MapperListTask.ListViewItemToTask(item);
-             
-                string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(taskDto, this);
 
-                if (option.Equals("Delete"))
-                {
-                    dmlTaskService.DeleteByIdTask(taskDto.Id);
 
-                    ControlsRefresher();
+            /*
+                            dtAllTasks.CurrentCell.ColumnIndex;
+                            Task task = MapperListTask.ListViewItemToTask(item);
 
-                }
-            }
+                            string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
+
+                            if (option.Equals("Delete"))
+                            {
+                                dmlTaskService.DeleteByIdTask(task.Id);
+
+                                ControlsRefresher();
+
+                            }*/
+
         }
 
 
         private void BtnAllTasks_Click(object sender, EventArgs e)
         {
-            List<TaskDto> tasksDto = getTaskService.FindAllTasks();
-            MapperListTask.TasksToListView(tasksDto, lvAllTasks);
+
+            List<Task> tasks = getTaskService.FindAllTasks();
+            MapperListTask.TasksToDataGridView(tasks, dtAllTasks);
 
         }
 
         private void DtpDate_ValueChanged_1(object sender, EventArgs e)
         {
-            List<TaskDto> tasksDto = getTaskService.FindByDataTasks(dtpDate.Value.Date);
-            MapperListTask.TasksToListView(tasksDto, lvAllTasks);
+            List<Task> tasks = getTaskService.FindByDataTasks(dtpDate.Value.Date);
+            MapperListTask.TasksToDataGridView(tasks, dtAllTasks);
         }
 
         private void LoadData()
         {
-            List<TaskDto> tasksDto = getTaskService.FindDailyTasks();
-            MapperListTask.TasksToListView(tasksDto, lvAllTasks);
+            List<Task> tasks = getTaskService.FindDailyTasks();
+            MapperListTask.TasksToDataGridView(tasks, dtAllTasks);
         }
 
         public void ControlsRefresher()
         {
-            this.Controls.Clear();           
+            this.Controls.Clear();
             InitializeComponent();
-            lvAllTasks.FullRowSelect = true;
+
             LoadData();
+        }
+
+        private void lvAllTasks_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtAllTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtAllTasks_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtAllTasks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow dataGridViewRow = dtAllTasks.Rows[e.RowIndex];
+
+            Task task = MapperListTask.GridRowToTask(dataGridViewRow);
+
+            string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
+
+            if (option.Equals("Delete"))
+            {
+                dmlTaskService.DeleteByIdTask(task.Id);
+
+                ControlsRefresher();
+
+            }
+
         }
     }
 }

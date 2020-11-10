@@ -19,15 +19,14 @@ namespace ToDoList.Forms
             InitializeComponent();
             getDataService = new GetTaskService();
             dmlTaskService = new DmlTaskService();
-            lvAllTasks.FullRowSelect = true;
             LoadData();
         }
 
         private void LoadData(int hour = 3)
         {
 
-            List<TaskDto> lists = getDataService.FindUpcomingTasks(hour);
-            MapperListTask.TasksToListView(lists, lvAllTasks);
+            List<Task> lists = getDataService.FindUpcomingTasks(hour);
+            MapperListTask.TasksToDataGridView(lists, dtUpcoming);
         }
 
         private void BtnApply_Click(object sender, EventArgs e)
@@ -37,28 +36,34 @@ namespace ToDoList.Forms
             
         }
 
-        private void LvAllTasks_MouseClick(object sender, MouseEventArgs e)
-        {
-
-            ListViewItem item = lvAllTasks.SelectedItems[0];
-            TaskDto taskDto = MapperListTask.ListViewItemToTask(item);
-            string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(taskDto,this);
-
-            if (option.Equals("Delete")) {
-                dmlTaskService.DeleteByIdTask(taskDto.Id);  
-                ControlsRefresher(); 
-            }
-                
-        }
-
+      
         public void ControlsRefresher()
         {
             this.Controls.Clear();
             InitializeComponent();
-            lvAllTasks.FullRowSelect = true;
             LoadData();
         }
 
-       
+        private void dtUpcoming_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtUpcoming_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow dataGridViewRow = dtUpcoming.Rows[e.RowIndex];
+
+            Task task = MapperListTask.GridRowToTask(dataGridViewRow);
+
+            string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
+
+            if (option.Equals("Delete"))
+            {
+                dmlTaskService.DeleteByIdTask(task.Id);
+
+                ControlsRefresher();
+
+            }
+        }
     }
 }

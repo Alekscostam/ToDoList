@@ -8,11 +8,11 @@ namespace ToDoList.Service.TaskInterfaces
 {
     public interface IFindTaskDto
     {
-        List<TaskDto> FindAllTasks();
-        List<TaskDto> FindUpcomingTasks(int amount);
-        List<TaskDto> FindDailyTasks();
-        List<TaskDto> FindByDataTasks(DateTime dateTime);
+        List<Task> FindAllTasks();
+        List<Task> FindUpcomingTasks(int amount);
+        List<Task> FindDailyTasks();
+        List<Task> FindByDataTasks(DateTime dateTime);
 
-        TaskDto FindOneUpcomingTaskByActuallyDate(TimeSpan actuallyDate);
+        Task FindOneUpcomingTaskByActuallyDate(TimeSpan actuallyDate);
     }
 }

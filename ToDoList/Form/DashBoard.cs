@@ -18,6 +18,7 @@ namespace ToDoList
             InitializeComponent();
             Startup(new FormUpcomingTasks());
             actuallyButton = new Button();
+        
         }
 
 
@@ -114,10 +115,10 @@ namespace ToDoList
             {
                 TimeSpan actuallyDate = TimeSpan.Parse(DateTime.Now.TimeOfDay.ToString().Substring(0, 5));
 
-                TaskDto taskDto = getTaskService.FindOneUpcomingTaskByActuallyDate(actuallyDate);
-                if (taskDto != null)
+                Task task = getTaskService.FindOneUpcomingTaskByActuallyDate(actuallyDate);
+                if (task != null)
                 {
-                    ShowMessage(taskDto);
+                    ShowMessage(task);
 
                 }
 
@@ -127,9 +128,9 @@ namespace ToDoList
 
         }
 
-        private void ShowMessage(TaskDto taskDto)
+        private void ShowMessage(Task task)
         {
-            Form a = new FormPopup(taskDto)
+            Form a = new FormPopup(task)
             {
                 StartPosition = FormStartPosition.Manual
             };
@@ -160,6 +161,16 @@ namespace ToDoList
         private void DashBoard_Load(object sender, EventArgs e)
         {
         // DashBoard Load
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
