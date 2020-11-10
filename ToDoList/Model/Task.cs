@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ToDoList.Model
 {
@@ -8,7 +8,6 @@ namespace ToDoList.Model
     {
         [Key]
         public int Id { get; set; }
-
 
         public int IdPriority { get; set; }
         public Priority Priority { get; set; }

@@ -55,6 +55,7 @@ namespace ToDoList.Forms
         {
             this.Controls.Clear();
             InitializeComponent();
+            lvAllTasks.FullRowSelect = true;
             LoadData();
         }
 

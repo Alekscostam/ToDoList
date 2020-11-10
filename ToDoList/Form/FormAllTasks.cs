@@ -69,8 +69,9 @@ namespace ToDoList.Forms
 
         public void ControlsRefresher()
         {
-            this.Controls.Clear();
+            this.Controls.Clear();           
             InitializeComponent();
+            lvAllTasks.FullRowSelect = true;
             LoadData();
         }
     }
