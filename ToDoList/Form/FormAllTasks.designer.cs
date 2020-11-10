@@ -90,7 +90,6 @@
             this.dtAllTasks.RowTemplate.Height = 25;
             this.dtAllTasks.Size = new System.Drawing.Size(706, 331);
             this.dtAllTasks.TabIndex = 10;
-            this.dtAllTasks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtAllTasks_CellContentClick_1);
             this.dtAllTasks.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtAllTasks_CellMouseClick);
             // 
             // Id

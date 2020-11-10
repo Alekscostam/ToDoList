@@ -9,14 +9,9 @@ using ToDoList.Model.DTO;
 
 namespace ToDoList
 {
-    public class MapperListTask
+    public static class MapperGridTask 
     {
-        private MapperListTask()
-        {
-            //private constructor            
-
-        }
-
+      
         public static void TasksToDataGridView(List<Task> lists, DataGridView dgv)
         {
             dgv.DataSource = null;
@@ -25,10 +20,6 @@ namespace ToDoList
 
             CustomDataGridView.StartupDesign(dgv);
 
-            //  lvAllTasks.DataSource = listsDto;
-
-
-            //    lvAllTasks.DataSource = bindingSource;
             int n = 0;
             for (int i = 0; i < listsDto.Count; i++)
             {
@@ -49,12 +40,12 @@ namespace ToDoList
                     dgv.Rows[i].DefaultCellStyle.ForeColor = Color.Blue;
 
             }
-
         }
-        
-        public static Task GridRowToTask(DataGridViewRow row)
+
+        public static Task GridRowToTask(DataGridView dataGridView, DataGridViewCellMouseEventArgs e) 
         {
             
+            DataGridViewRow row = dataGridView.Rows[e.RowIndex];
 
             string id;
 
@@ -62,7 +53,7 @@ namespace ToDoList
             {
 
                 case "Red":
-                    id = ((int) PriorityModel.HIGH).ToString();
+                    id = ((int)PriorityModel.HIGH).ToString();
                     break;
                 case "Orange":
                     id = ((int)PriorityModel.MEDIUM).ToString();
@@ -73,14 +64,15 @@ namespace ToDoList
 
             }
 
-            Task task = new Task() {
-                 Id   =int.Parse(row.Cells["Id"].Value.ToString()),
-                TimeSpan   = row.Cells["Time"].Value.ToString(),
-               DateTime = row.Cells["Date"].Value.ToString(),
+            Task task = new Task()
+            {
+                Id = int.Parse(row.Cells["Id"].Value.ToString()),
+                TimeSpan = row.Cells["Time"].Value.ToString(),
+                DateTime = row.Cells["Date"].Value.ToString(),
                 Description = row.Cells["ToDo"].Value.ToString(),
-                IdPriority =int.Parse (id),
+                IdPriority = int.Parse(id),
 
-        };
+            };
 
 
             return task;

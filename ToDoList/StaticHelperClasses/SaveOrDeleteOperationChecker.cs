@@ -4,16 +4,9 @@ using ToDoList.Model;
 
 namespace ToDoList.HelperClasses
 {
-    public class SaveOrDeleteOperationChecker
+    public static class SaveOrDeleteOperationChecker
     {
-        
-        
-        private  SaveOrDeleteOperationChecker()
-        {
-
-            // private const
-        }
-
+       
         public static string ChoiceOfOptions(Task taskDto, Form forms)
         {
             string deleteChecker = OperationChecker("do you want to delete the task", "Delete task");

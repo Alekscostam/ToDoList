@@ -4,12 +4,9 @@ using ToDoList.Model;
 
 namespace ToDoList.HelperClasses
 {
-    public class ObjectMapper
+    public static class ObjectMapper
     {
-      private ObjectMapper()
-        {
-
-        }
+     
 
         public static List<TaskModel> MapperListTaskToListTaskDto(List<Task> tasksModel)
         {

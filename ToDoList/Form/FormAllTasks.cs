@@ -26,46 +26,24 @@ namespace ToDoList.Forms
         }
 
 
-        private void DtAllTasks_MouseClick(object sender, MouseEventArgs e)
-        {
-
-
-
-            /*
-                            dtAllTasks.CurrentCell.ColumnIndex;
-                            Task task = MapperListTask.ListViewItemToTask(item);
-
-                            string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
-
-                            if (option.Equals("Delete"))
-                            {
-                                dmlTaskService.DeleteByIdTask(task.Id);
-
-                                ControlsRefresher();
-
-                            }*/
-
-        }
-
-
         private void BtnAllTasks_Click(object sender, EventArgs e)
         {
 
             List<Task> tasks = getTaskService.FindAllTasks();
-            MapperListTask.TasksToDataGridView(tasks, dtAllTasks);
+            MapperGridTask.TasksToDataGridView(tasks, dtAllTasks);
 
         }
 
         private void DtpDate_ValueChanged_1(object sender, EventArgs e)
         {
             List<Task> tasks = getTaskService.FindByDataTasks(dtpDate.Value.Date);
-            MapperListTask.TasksToDataGridView(tasks, dtAllTasks);
+            MapperGridTask.TasksToDataGridView(tasks, dtAllTasks);
         }
 
         private void LoadData()
         {
             List<Task> tasks = getTaskService.FindDailyTasks();
-            MapperListTask.TasksToDataGridView(tasks, dtAllTasks);
+            MapperGridTask.TasksToDataGridView(tasks, dtAllTasks);
         }
 
         public void ControlsRefresher()
@@ -76,37 +54,31 @@ namespace ToDoList.Forms
             LoadData();
         }
 
-        private void lvAllTasks_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtAllTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dtAllTasks_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+       
         private void dtAllTasks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            DataGridViewRow dataGridViewRow = dtAllTasks.Rows[e.RowIndex];
-
-            Task task = MapperListTask.GridRowToTask(dataGridViewRow);
-
-            string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
-
-            if (option.Equals("Delete"))
+            try
             {
-                dmlTaskService.DeleteByIdTask(task.Id);
+                Task task = MapperGridTask.GridRowToTask(dtAllTasks, e);
 
-                ControlsRefresher();
+                string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
+
+                if (option.Equals("Delete"))
+                {
+                    dmlTaskService.DeleteByIdTask(task.Id);
+
+                    ControlsRefresher();
+
+                }
 
             }
 
+            catch (ArgumentOutOfRangeException)
+            {
+                //Zaznoczonych kilka pol
+            }
         }
+
     }
 }
+

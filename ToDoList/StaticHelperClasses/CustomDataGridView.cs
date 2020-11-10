@@ -8,9 +8,8 @@ using System.Windows.Forms;
 
 namespace ToDoList.HelperClasses
 {
-  public  class CustomDataGridView
+  public static class CustomDataGridView
     {
-
 
       public  static void StartupDesign(DataGridView dataGridView)
         {

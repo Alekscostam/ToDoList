@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using ToDoList.Service.OperationsService;
 using ToDoList.HelperClasses;
 using ToDoList.Service.TaskInterfaces;
+using ToDoList.StaticHelperClasses;
 
 namespace ToDoList.Forms
 {
@@ -26,17 +27,17 @@ namespace ToDoList.Forms
         {
 
             List<Task> lists = getDataService.FindUpcomingTasks(hour);
-            MapperListTask.TasksToDataGridView(lists, dtUpcoming);
+            MapperGridTask.TasksToDataGridView(lists, dtUpcoming);
         }
 
         private void BtnApply_Click(object sender, EventArgs e)
         {
             int count = Convert.ToInt32(Math.Round(nudHour.Value, 0));
             LoadData(count);
-            
+
         }
 
-      
+
         public void ControlsRefresher()
         {
             this.Controls.Clear();
@@ -51,9 +52,8 @@ namespace ToDoList.Forms
 
         private void dtUpcoming_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            DataGridViewRow dataGridViewRow = dtUpcoming.Rows[e.RowIndex];
-
-            Task task = MapperListTask.GridRowToTask(dataGridViewRow);
+            try { 
+            Task task = MapperGridTask.GridRowToTask(dtUpcoming, e);
 
             string option = SaveOrDeleteOperationChecker.ChoiceOfOptions(task, this);
 
@@ -63,6 +63,11 @@ namespace ToDoList.Forms
 
                 ControlsRefresher();
 
+            }
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                //Zaznoczonych kilka pol
             }
         }
     }
