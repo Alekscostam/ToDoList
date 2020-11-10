@@ -1,0 +1,138 @@
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\TaskDbDataSet.xsd
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\TaskDb.mdf
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\TaskDb_log.ldf
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\TaskDbDataSet.Designer.cs
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\TaskDbDataSet.xsc
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\TaskDbDataSet.xss
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\ToDoList.exe.config
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\ToDoList.exe
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\ToDoList.pdb
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\EntityFramework.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Remotion.Linq.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\System.Interactive.Async.dll
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\EntityFramework.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\Remotion.Linq.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\bin\Debug\System.Interactive.Async.xml
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.DashBoard.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.Forms.FormAllTasks.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.Forms.FormDmlData.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.FormInformation.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.Forms.FormUpcomingTasks.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.Migrations.AddTask.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.Migrations.AddSeeData.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.Properties.Resources.resources
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.csproj.GenerateResource.cache
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.csproj.CopyComplete
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.exe
+C:\Users\Aleksander\Desktop\new begining!\ToDoList\ToDoList\obj\Debug\ToDoList.pdb
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\TaskDb.mdf
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\TaskDb_log.ldf
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\ToDoList.exe.config
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\ToDoList.exe.manifest
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\ToDoList.application
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\ToDoList.exe
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\ToDoList.pdb
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\EntityFramework.dll
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\System.dll
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\EntityFramework.xml
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\bin\Debug\System.xml
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.FormPopup.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.DashBoard.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.Forms.FormAllTasks.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.Forms.FormDmlData.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.FormInformation.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.Forms.FormUpcomingTasks.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.Migrations.AddTask.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.Migrations.AddSeeData.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.Properties.Resources.resources
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.csproj.GenerateResource.cache
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.exe.manifest
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.application
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.csproj.CopyComplete
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.exe
+C:\Users\Aleksander\Desktop\Program\Program\ToDoList\obj\Debug\ToDoList.pdb
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\x86\sqlite3.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\x64\sqlite3.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\TaskDb.db
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\ToDoList.exe.config
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\ToDoList.exe.manifest
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\ToDoList.application
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\ToDoList.exe
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\ToDoList.pdb
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Remotion.Linq.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Interactive.Async.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\Remotion.Linq.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Interactive.Async.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.FormPopup.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.DashBoard.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.Forms.FormAllTasks.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.Forms.FormDmlData.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.FormInformation.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.Forms.FormUpcomingTasks.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.Properties.Resources.resources
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.csproj.GenerateResource.cache
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.exe.manifest
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.application
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.csproj.CopyComplete
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.exe
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.pdb
