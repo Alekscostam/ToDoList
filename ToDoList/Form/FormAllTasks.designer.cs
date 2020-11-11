@@ -33,8 +33,8 @@
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.dtAllTasks = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ToDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtAllTasks)).BeginInit();
             this.SuspendLayout();
@@ -71,8 +71,8 @@
             this.dtAllTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtAllTasks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Date,
             this.Time,
+            this.Date,
             this.ToDo});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
@@ -84,13 +84,13 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtAllTasks.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtAllTasks.GridColor = System.Drawing.Color.White;
-            this.dtAllTasks.Location = new System.Drawing.Point(30, 12);
+            this.dtAllTasks.Location = new System.Drawing.Point(0, -2);
             this.dtAllTasks.Name = "dtAllTasks";
             this.dtAllTasks.ReadOnly = true;
             this.dtAllTasks.RowTemplate.Height = 25;
-            this.dtAllTasks.Size = new System.Drawing.Size(706, 331);
+            this.dtAllTasks.Size = new System.Drawing.Size(800, 340);
             this.dtAllTasks.TabIndex = 10;
-            this.dtAllTasks.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtAllTasks_CellMouseClick);
+            this.dtAllTasks.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtAllTasks_CellMouseClick);
             // 
             // Id
             // 
@@ -99,31 +99,31 @@
             this.Id.ReadOnly = true;
             this.Id.Width = 50;
             // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            // 
             // Time
             // 
             this.Time.HeaderText = "Time";
             this.Time.Name = "Time";
             this.Time.ReadOnly = true;
             // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
             // ToDo
             // 
             this.ToDo.HeaderText = "To do";
             this.ToDo.Name = "ToDo";
             this.ToDo.ReadOnly = true;
-            this.ToDo.Width = 500;
+            this.ToDo.Width = 509;
             // 
             // FormAllTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(784, 378);
+            this.ClientSize = new System.Drawing.Size(784, 377);
             this.Controls.Add(this.dtAllTasks);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.btnAllTasks);
@@ -138,8 +138,8 @@
         private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.DataGridView dtAllTasks;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn ToDo;
     }
 }

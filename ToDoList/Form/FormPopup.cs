@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using ToDoList.HelperClasses;
-using ToDoList.Model;
 using ToDoList.Model.DTO;
 
 namespace ToDoList
 {
     public partial class FormPopup : Form
     {
-        Model.Task task;
+        readonly Model.Task task;
         public FormPopup(Model.Task taskDto)
         {
             
@@ -50,7 +42,7 @@ namespace ToDoList
 
         } 
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
 
             this.Close();

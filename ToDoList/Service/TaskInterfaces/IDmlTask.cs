@@ -5,8 +5,9 @@ namespace ToDoList.Service.TaskInterfaces
 {
    public interface IDmlTask 
     {
-        void SaveTask(Task taskModel);
-        void ModifyTask(Task taskModel);
+        void SaveTask(Task task);
+        void ModifyTask(Task task);
         void DeleteByIdTask(int IdTask);
+
     }
 }

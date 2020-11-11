@@ -85,14 +85,13 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtUpcoming.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtUpcoming.GridColor = System.Drawing.Color.White;
-            this.dtUpcoming.Location = new System.Drawing.Point(44, 17);
+            this.dtUpcoming.Location = new System.Drawing.Point(0, 0);
             this.dtUpcoming.Name = "dtUpcoming";
             this.dtUpcoming.ReadOnly = true;
             this.dtUpcoming.RowTemplate.Height = 25;
-            this.dtUpcoming.Size = new System.Drawing.Size(688, 320);
+            this.dtUpcoming.Size = new System.Drawing.Size(800, 337);
             this.dtUpcoming.TabIndex = 9;
-            this.dtUpcoming.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtUpcoming_CellContentClick);
-            this.dtUpcoming.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtUpcoming_CellMouseClick);
+            this.dtUpcoming.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtUpcoming_CellMouseClick);
             // 
             // Id
             // 
@@ -118,13 +117,13 @@
             this.ToDo.HeaderText = "To do";
             this.ToDo.Name = "ToDo";
             this.ToDo.ReadOnly = true;
-            this.ToDo.Width = 500;
+            this.ToDo.Width = 509;
             // 
             // FormUpcomingTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 378);
+            this.ClientSize = new System.Drawing.Size(784, 377);
             this.Controls.Add(this.dtUpcoming);
             this.Controls.Add(this.btnApply);
             this.Controls.Add(this.nudHour);

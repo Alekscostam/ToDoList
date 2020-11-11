@@ -11,9 +11,8 @@ namespace ToDoList.Forms
 {
     public partial class FormAllTasks : Form, ILoader
     {
-        readonly IFindTaskDto getTaskService;
+        readonly IFindTask getTaskService;
         readonly IDmlTask dmlTaskService;
-
 
         public FormAllTasks()
         {
@@ -24,7 +23,6 @@ namespace ToDoList.Forms
 
 
         }
-
 
         private void BtnAllTasks_Click(object sender, EventArgs e)
         {
@@ -54,8 +52,9 @@ namespace ToDoList.Forms
             LoadData();
         }
 
-       
-        private void dtAllTasks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+    
+
+        private void DtAllTasks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try
             {
@@ -78,7 +77,6 @@ namespace ToDoList.Forms
                 //Zaznoczonych kilka pol
             }
         }
-
     }
 }
 

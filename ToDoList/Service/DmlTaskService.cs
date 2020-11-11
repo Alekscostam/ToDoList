@@ -12,17 +12,16 @@ namespace ToDoList.Service.OperationsService
     {
         readonly TaskDbContext taskDbContext = new TaskDbContext();
 
-
-        public void SaveTask(Task taskModel)
+        public void SaveTask(Task task)
         {
 
-            taskDbContext.Tasks.Add(taskModel);
+            taskDbContext.Tasks.Add(task);
             taskDbContext.SaveChanges();
         }
-        public void ModifyTask(Task taskModel)
+        public void ModifyTask(Task task)
         {
 
-            taskDbContext.Entry(taskModel).State = EntityState.Modified;
+            taskDbContext.Entry(task).State = EntityState.Modified;
             taskDbContext.SaveChanges();
         }
 

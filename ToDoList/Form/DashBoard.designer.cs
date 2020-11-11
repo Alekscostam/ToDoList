@@ -144,7 +144,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(800, 417);
             this.panelMain.TabIndex = 2;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // lblTitle
             // 
@@ -224,7 +223,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashBoard";
             this.Text = "ToDoList";
-            this.Load += new System.EventHandler(this.DashBoard_Load);
             this.Resize += new System.EventHandler(this.DashBoard_Resize);
             this.panel.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);

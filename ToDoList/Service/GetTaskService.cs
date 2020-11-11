@@ -7,7 +7,7 @@ using ToDoList.Service.TaskInterfaces;
 
 namespace ToDoList.Service.OperationsService
 {
-    public class GetTaskService : IFindTaskDto
+    public class GetTaskService : IFindTask
     {
         readonly TaskDbContext taskContext = new TaskDbContext();
        
@@ -51,7 +51,7 @@ namespace ToDoList.Service.OperationsService
         {
 
             Task task = FindUpcomingTasks(1)
-                .Where(x=>(TimeSpan.Parse(x.TimeSpan)-actuallyDate).ToString().Substring(0,2).Equals("00")).FirstOrDefault();
+                .FirstOrDefault(x=>(TimeSpan.Parse(x.TimeSpan)-actuallyDate).ToString().Substring(0,2).Equals("00"));
             return task;
 
         }

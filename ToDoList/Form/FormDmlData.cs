@@ -11,29 +11,29 @@ namespace ToDoList.Forms
     public partial class FormDmlData : Form , ILoader
     {
         readonly DmlTaskService dmlTaskService;
-        readonly Task taskDto;
+        readonly Task task;
         public FormDmlData(Task taskDto = null)
         {
 
             InitializeComponent();
             dmlTaskService = new DmlTaskService();
-            this.taskDto = taskDto;
-            LoadData(this.taskDto);
+            this.task = taskDto;
+            LoadData(this.task);
 
         }
 
         private void LoadData(Task task)
         {
-            if (taskDto != null)
+            if (this.task != null)
             {
-                txtDescription.Text = taskDto.Description;
+                txtDescription.Text = this.task.Description;
 
-                string dateTime = taskDto.DateTime;
+                string dateTime = this.task.DateTime;
 
                 dtpDate.Value = DateTime.Parse(dateTime);
 
-                string timeSpan = taskDto.TimeSpan;
-          
+                string timeSpan = this.task.TimeSpan;
+
                 mtbHour.Text = timeSpan;
 
                 switch (task.IdPriority)
@@ -63,17 +63,15 @@ namespace ToDoList.Forms
             if (resultValidInfo)
             {
 
-                if (taskDto == null)
+                if (task == null)
                 { 
-                    Task task = CreateTaskModel(dateTime, mtbHour.Text, txtDescription.Text, priority, null);
-                    dmlTaskService.SaveTask(task);
+                    dmlTaskService.SaveTask(CreateTaskModel(dateTime, mtbHour.Text, txtDescription.Text, priority, null));
                     ControlsRefresher();
                 }
 
                   
                 else {
-                    Task task = CreateTaskModel(dateTime, mtbHour.Text, txtDescription.Text, priority, taskDto.Id.ToString());
-                    dmlTaskService.ModifyTask(task);
+                    dmlTaskService.ModifyTask(CreateTaskModel(dateTime, mtbHour.Text, txtDescription.Text, priority, task.Id.ToString()));
                     this.Close();
                 }
                
@@ -147,6 +145,5 @@ namespace ToDoList.Forms
             InitializeComponent();
            
         }
-
     }
 }

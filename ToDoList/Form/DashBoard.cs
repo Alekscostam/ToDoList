@@ -157,20 +157,5 @@ namespace ToDoList
             notifyIcon.Visible = false;
             this.Visible = true;
         }
-
-        private void DashBoard_Load(object sender, EventArgs e)
-        {
-        // DashBoard Load
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

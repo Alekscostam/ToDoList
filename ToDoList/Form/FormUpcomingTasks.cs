@@ -5,13 +5,12 @@ using System.Windows.Forms;
 using ToDoList.Service.OperationsService;
 using ToDoList.HelperClasses;
 using ToDoList.Service.TaskInterfaces;
-using ToDoList.StaticHelperClasses;
 
 namespace ToDoList.Forms
 {
     public partial class FormUpcomingTasks : Form, ILoader
     {
-        readonly IFindTaskDto getDataService;
+        readonly IFindTask getDataService;
         readonly IDmlTask dmlTaskService;
 
 
@@ -45,12 +44,7 @@ namespace ToDoList.Forms
             LoadData();
         }
 
-        private void dtUpcoming_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dtUpcoming_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void DtUpcoming_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try { 
             Task task = MapperGridTask.GridRowToTask(dtUpcoming, e);

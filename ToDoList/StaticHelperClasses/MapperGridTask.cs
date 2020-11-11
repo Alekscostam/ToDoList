@@ -1,6 +1,5 @@
 ﻿
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using ToDoList.HelperClasses;
@@ -16,20 +15,15 @@ namespace ToDoList
         {
             dgv.DataSource = null;
             dgv.Rows.Clear();
-            List<TaskModel> listsDto = ObjectMapper.MapperListTaskToListTaskDto(lists);
 
             CustomDataGridView.StartupDesign(dgv);
-
-            int n = 0;
-            for (int i = 0; i < listsDto.Count; i++)
+            for (int i = 0; i < lists.Count; i++)
             {
-                n = dgv.Rows.Add();
-                dgv.Rows[n].Cells[0].Value = listsDto[i].Id;
-                dgv.Rows[n].Cells[1].Value = listsDto[i].DateTime;
-                dgv.Rows[n].Cells[2].Value = listsDto[i].TimeSpan;
-                dgv.Rows[n].Cells[3].Value = listsDto[i].Description;
-
-
+                int n = dgv.Rows.Add();
+                dgv.Rows[n].Cells[0].Value = lists[i].Id;
+                dgv.Rows[n].Cells[1].Value = lists[i].DateTime;
+                dgv.Rows[n].Cells[2].Value = lists[i].TimeSpan;
+                dgv.Rows[n].Cells[3].Value = lists[i].Description;
 
                 if (lists[i].IdPriority.ToString() == ((int)PriorityModel.HIGH).ToString())
                     dgv.Rows[i].DefaultCellStyle.ForeColor = Color.Red;
