@@ -48,12 +48,10 @@ namespace ToDoList.Forms
         {
             this.Controls.Clear();
             InitializeComponent();
-
             LoadData();
         }
 
     
-
         private void DtAllTasks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try
@@ -65,7 +63,6 @@ namespace ToDoList.Forms
                 if (option.Equals("Delete"))
                 {
                     dmlTaskService.DeleteByIdTask(task.Id);
-
                     ControlsRefresher();
 
                 }

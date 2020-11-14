@@ -159,10 +159,10 @@
     <Compile Include="Form\FormInformation.Designer.cs">
       <DependentUpon>FormInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="StaticHelperClasses\CustomDataGridView.cs" />
-    <Compile Include="StaticHelperClasses\ILoader.cs" />
-    <Compile Include="StaticHelperClasses\SaveOrDeleteOperationChecker.cs" />
-    <Compile Include="StaticHelperClasses\MapperGridTask.cs" />
+    <Compile Include="HelperClasses\CustomDataGridView.cs" />
+    <Compile Include="HelperClasses\ILoader.cs" />
+    <Compile Include="HelperClasses\SaveOrDeleteOperationChecker.cs" />
+    <Compile Include="HelperClasses\MapperGridTask.cs" />
     <Compile Include="Form\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>

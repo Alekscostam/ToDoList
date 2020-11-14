@@ -9,10 +9,7 @@ namespace ToDoList.HelperClasses
 
       public  static void StartupDesign(DataGridView dataGridView)
         {
-            
-
-
-
+          
             dataGridView.BorderStyle = BorderStyle.None;
             dataGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(237, 245, 252);
             dataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;

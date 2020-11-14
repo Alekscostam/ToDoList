@@ -136,3 +136,4 @@ C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoLi
 C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.csproj.CopyComplete
 C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.exe
 C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.pdb
+C:\Users\Aleksander\Desktop\Program - Copy (4)\Program\ToDoList\obj\Debug\ToDoList.csprojAssemblyReference.cache

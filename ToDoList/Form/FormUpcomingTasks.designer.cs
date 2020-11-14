@@ -85,11 +85,11 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtUpcoming.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtUpcoming.GridColor = System.Drawing.Color.White;
-            this.dtUpcoming.Location = new System.Drawing.Point(0, 0);
+            this.dtUpcoming.Location = new System.Drawing.Point(0, -3);
             this.dtUpcoming.Name = "dtUpcoming";
             this.dtUpcoming.ReadOnly = true;
             this.dtUpcoming.RowTemplate.Height = 25;
-            this.dtUpcoming.Size = new System.Drawing.Size(800, 337);
+            this.dtUpcoming.Size = new System.Drawing.Size(800, 340);
             this.dtUpcoming.TabIndex = 9;
             this.dtUpcoming.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtUpcoming_CellMouseClick);
             // 

@@ -266,7 +266,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rrKMywNHuwDLqzQnNB181HbS+7rAIhiUOz4JkDn3NMQ=</dsig:DigestValue>
+        <dsig:DigestValue>/UsZNtaTd2cr0L9ojyJrO2LKf918laCHv9DoFoqKBdw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -288,13 +288,13 @@
       <dsig:DigestValue>su+E0gl4uKRsqW0Ng7F9/y926RMsS+gfGek3Z42Gvu4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ToDoList.exe.config" size="354">
+  <file name="ToDoList.exe.config" size="345">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jo+qLJN+YMo0ks+BjZWJERRlrpP7UcMY1R5VYe0Uc9U=</dsig:DigestValue>
+      <dsig:DigestValue>VZDrc3O6SIpc8zue58+dIKNxb5wJFRNNc393lPiH7Cc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="x64\sqlite3.dll" size="1680384">
